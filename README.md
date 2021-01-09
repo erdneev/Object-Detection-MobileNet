@@ -6,15 +6,12 @@ This project was made for detecting 20 different types of object such as "backgr
            "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
            "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
            "sofa", "train", "tvmonitor" in a live video using the webcam or a pre-recorded video.<br>
-## Preview
-![Alt Text](https://github.com/Sid2697/Object-Detection-MobileNet/blob/master/Object_Detection.gif)
-### Better Quality Video
-[![IMAGE ALT TEXT](https://github.com/Sid2697/Object-Detection-MobileNet/blob/master/Thumbnail.png)](https://youtu.be/gcw4lQFYXO0)
 
 ## Requirements
 - numpy
 - imutils
 - OpenCV
+- pyqt5
 
 You can install all the required libraries by running the following command <br>
 `pip install requirements.txt`
@@ -23,13 +20,12 @@ You can install all the required libraries by running the following command <br>
 2. Combining MobileNet and Single Shot Detector(SSD) framework.
 3. Model used is Caffe version of original [TensorFlow implementation](https://github.com/Zehaos/MobileNet) by Howard et al. 
 ## Procedure
-### For detecting objects in an image.
+### Execute program.
 ```bash
-./image_object_detection.py -i #path to the input image -p #path to Caffe deploy prototxt file -m #path to the Caffe pre-trained model
+python pyqt5main.py
 ```
-### For detecting objects in a video.
-```bash
-./video_object_detection.py -p #path to Caffe deploy prototxt file -m #path to the Caffe pre-trained model
-```
+### Choose image from file selector on your computer.
+See result of classification.
 ## Credits
 Adrian Rosebrock creator of [PyimageSearch](https://www.pyimagesearch.com) 
+Sid2697 - author of original [repository](https://github.com/Sid2697/Object-Detection-MobileNet)

@@ -1,3 +1,4 @@
 python-opencv
 imutils
 numpy
+pyqt5
